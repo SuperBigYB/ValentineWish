@@ -1,137 +1,149 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
     <title>Happy Valentine :)</title>
     <link
-      rel="stylesheet"
+            rel="stylesheet"
     />
-    <link rel="shortcut icon" type="image/png" href="./img/heart.svg" />
-    <link rel="stylesheet" href="style/style.css" />
-  </head>
+    <link rel="shortcut icon" type="image/png" href="./img/heart.svg"/>
+    <link rel="stylesheet" href="style/style.css"/>
+</head>
 
-  <body>
-    <div class="container">
-      <div class="one">
+<body>
+<div class="container">
+    <div class="one">
         <h1 class="one">
-          亲爱的
-          <span id="name">猪猪</span>
+            亲爱的
+            <span id="name">猪猪</span>
         </h1>
         <p class="two" id="greetingText">小螺号 ^^</p>
-      </div>
-      <div class="three">
+    </div>
+    <div class="three">
         <p>新年快乐!!! :D</p>
-      </div>
-      <div class="four">
+    </div>
+    <div class="four">
         <div class="text-box">
-          <p class="hbd-chatbox">
-            以及...情人节快乐!!! hhh
-          </p>
-          <p class="fake-btn">Send</p>
+            <p class="hbd-chatbox">
+                以及...情人节快乐!!! hhh
+            </p>
+            <p class="fake-btn">Send</p>
         </div>
-      </div>
-      <div class="five">
+    </div>
+    <div class="five">
         <p class="idea-1">两情若是久长时，又岂在朝朝暮暮。</p>
-        <p class="idea-2">我们已经认识了8个多月啦 ><</p>
+        <p class="idea-2">我们已经认识了<span id="daysPassed">计算中...</span>天啦 ><</p>
+
+        <script>
+            // 计算从2023年7月8日到当前日期的天数
+            const startDate = new Date('2023-07-08');
+            const currentDate = new Date();
+            const timeDifference = currentDate - startDate;
+            const daysDifference = Math.floor(timeDifference / (1000 * 60 * 60 * 24));
+
+            // 更新<p>标签中的内容
+            document.getElementById('daysPassed').textContent = daysDifference;
+        </script>
+
         <p class="idea-3">
-          我非常想给你一些 <strong>惊喜</strong>.
+            我非常想给你一些 <strong>惊喜</strong>.
         </p>
         <p class="idea-4">因为,</p>
         <p class="idea-5">
-          你就是我的惊喜
-          <span>:)</span>
+            你就是我的惊喜
+            <span>:)</span>
         </p>
         <p class="idea-6">
-          <span>S</span>
-          <span>O</span>
+            <span>S</span>
+            <span>O</span>
         </p>
-      </div>
-      <div class="six">
-        <img src="img/vector.jpg" alt="" class = "girl-dp" id="imagePath" />
+    </div>
+    <div class="six">
+        <img src="img/vector.jpg" alt="" class="girl-dp" id="imagePath"/>
         <div class="wish">
-          <h3 class="wish-hbd">Happy Valentine's Day Gorgeous</h3>
-          <h5 id="wishText">要天天开心哦!</h5>
+            <h3 class="wish-hbd">Happy Valentine's Day Gorgeous</h3>
+            <h5 id="wishText">要天天开心哦!</h5>
         </div>
-      </div>
-      <div class="seven">
+    </div>
+    <div class="seven">
         <div class="baloons">
-          <img src="img/balloon.svg" alt="" />
-          <!-- <img src="img/music-note.svg" alt="" /> -->
-          <img src="img/smiling.svg" />
-          <img src="img/heart.svg" />
-          <!-- <img src="img/happy.svg" alt="" /> -->
-          <img src="img/balloon.svg" alt="" />
-          <!-- <img src="img/music-note.svg" alt="" /> -->
-          <!-- <img src="img/smiling.svg" /> -->
-          <img src="img/heart.svg" />
-          <img src="img/balloon.svg" alt="" />
-          <img src="img/music-note.svg" alt="" />
-          <img src="img/heart.svg" />
-          <img src="img/balloon.svg" alt="" />
-          <!-- <img src="img/music-note.svg" alt="" /> -->
-          <!-- <img src="img/smiling.svg" /> -->
-          
-          <img src="img/heart.svg" />
-          <img src="img/balloon.svg" alt="" />
-          <img src="img/heart.svg" />
-          <img src="img/heart.svg" />
-          <img src="img/music-note.svg" alt="" />
-          <img src="img/smiling.svg" />
-         
-          <img src="img/happy.svg" alt="" />
-          <img src="img/balloon.svg" alt="" />
-          <img src="img/heart.svg" />
-          <!-- <img src="img/music-note.svg" alt="" /> -->
-          <!-- <img src="img/heart.svg" />
-          
-          <img src="img/happy.svg" alt="" />
-          <img src="img/balloon.svg" alt="" />
-          <img src="img/music-note.svg" alt="" /> -->
-          <img src="img/smiling.svg" />
-          <!-- <img src="img/heart.svg" /> -->
-          <!-- <img src="img/happy.svg" alt="" /> -->
+            <img src="img/balloon.svg" alt=""/>
+            <img src="img/music-note.svg" alt=""/>
+            <img src="img/smiling.svg"/>
+            <img src="img/heart.svg"/>
+            <img src="img/happy.svg" alt=""/>
+            <img src="img/balloon.svg" alt=""/>
+            <img src="img/music-note.svg" alt=""/>
+            <img src="img/smiling.svg"/>
+            <img src="img/heart.svg"/>
+            <img src="img/balloon.svg" alt=""/>
+            <img src="img/music-note.svg" alt=""/>
+            <img src="img/heart.svg"/>
+            <img src="img/balloon.svg" alt=""/>
+            <img src="img/music-note.svg" alt=""/>
+            <img src="img/smiling.svg"/>
+
+            <img src="img/heart.svg"/>
+            <img src="img/balloon.svg" alt=""/>
+            <img src="img/heart.svg"/>
+            <img src="img/heart.svg"/>
+            <img src="img/music-note.svg" alt=""/>
+            <img src="img/smiling.svg"/>
+
+            <img src="img/happy.svg" alt=""/>
+            <img src="img/balloon.svg" alt=""/>
+            <img src="img/heart.svg"/>
+            <img src="img/music-note.svg" alt=""/>
+            <img src="img/heart.svg"/>
+
+            <img src="img/happy.svg" alt=""/>
+            <img src="img/balloon.svg" alt=""/>
+            <img src="img/music-note.svg" alt=""/>
+            <img src="img/smiling.svg"/>
+            <img src="img/heart.svg"/>
+            <img src="img/happy.svg" alt=""/>
         </div>
-      </div>
-      <div class="eight">
+    </div>
+    <div class="eight">
         <svg viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg">
-          <circle cx="20" cy="20" r="20" />
+            <circle cx="20" cy="20" r="20"/>
         </svg>
         <svg viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg">
-          <circle cx="20" cy="20" r="20" />
+            <circle cx="20" cy="20" r="20"/>
         </svg>
         <svg viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg">
-          <circle cx="20" cy="20" r="20" />
+            <circle cx="20" cy="20" r="20"/>
         </svg>
         <svg viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg">
-          <circle cx="20" cy="20" r="20" />
+            <circle cx="20" cy="20" r="20"/>
         </svg>
         <svg viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg">
-          <circle cx="20" cy="20" r="20" />
+            <circle cx="20" cy="20" r="20"/>
         </svg>
         <svg viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg">
-          <circle cx="20" cy="20" r="20" />
+            <circle cx="20" cy="20" r="20"/>
         </svg>
         <svg viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg">
-          <circle cx="20" cy="20" r="20" />
+            <circle cx="20" cy="20" r="20"/>
         </svg>
         <svg viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg">
-          <circle cx="20" cy="20" r="20" />
+            <circle cx="20" cy="20" r="20"/>
         </svg>
         <svg viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg">
-          <circle cx="20" cy="20" r="20" />
+            <circle cx="20" cy="20" r="20"/>
         </svg>
-      </div>
-      <div class="nine">
+    </div>
+    <div class="nine">
         <p>结束啦, 怎么样做的还可以吧.</p>
         <p id="replay">点击重新观看</p>
         <p class="last-smile">:)</p>
-      </div>
     </div>
-  </body>
+</div>
+</body>
 
-  <script src="script/http_cdnjs.cloudflare.com_ajax_libs_gsap_1.20.3_TweenMax.min.js"></script>
-  <script src="script/http_unpkg.com_babel-standalone@6_babel.js"></script>
-  <script type="text/babel" src="script/main.js"></script>
+<script src="script/http_cdnjs.cloudflare.com_ajax_libs_gsap_1.20.3_TweenMax.min.js"></script>
+<script src="script/http_unpkg.com_babel-standalone@6_babel.js"></script>
+<script type="text/babel" src="script/main.js"></script>
 </html>
